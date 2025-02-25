@@ -3,6 +3,8 @@
 ## Project Description
 This project is an e-commerce application designed to provide users with a seamless online shopping experience. The application includes features such as product listings, user authentication, a shopping cart, and a secure checkout process. Our goal is to create a user-friendly and efficient platform for both buyers and sellers.
 
+## Milestone 1: Project Overview
+During this session, we covered the basics of setting up a project repository and initializing it with a README file. We also outlined the overall structure of our e-commerce application, including key features and the technologies we'll be using.
 
 ## Key Features
 1. **User Authentication:** Secure registration and login functionality for users.
@@ -11,5 +13,4 @@ This project is an e-commerce application designed to provide users with a seaml
 4. **Checkout Process:** A secure and user-friendly checkout process with payment integration.
 5. **Order Management:** Order history and tracking for users and sellers.
 6. **Admin Panel:** An admin interface for managing products, orders, and users.
-
 
