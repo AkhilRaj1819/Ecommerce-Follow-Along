@@ -21,5 +21,5 @@ In this milestone, we have set up the project and implemented the Login Page. Th
 - Created the Login Page
 - Implemented form validation
 - Connected the Login Page to the backend API for user authentication
-- completed taiwind 
+- completed setting for tailwind-css
 
