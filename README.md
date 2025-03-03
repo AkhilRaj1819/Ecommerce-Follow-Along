@@ -14,3 +14,12 @@ During this session, we covered the basics of setting up a project repository an
 5. **Order Management:** Order history and tracking for users and sellers.
 6. **Admin Panel:** An admin interface for managing products, orders, and users.
 
+## Milestone 2: Project Setup and Login Page
+
+In this milestone, we have set up the project and implemented the Login Page. The following tasks were completed:
+- Project setup and initialization
+- Created the Login Page
+- Implemented form validation
+- Connected the Login Page to the backend API for user authentication
+- completed taiwind 
+

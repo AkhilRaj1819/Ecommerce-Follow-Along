@@ -1,0 +1,35 @@
+@import "tailwindcss";
+*{
+    background-color: black;
+}
+h1{
+    color: white;
+    text-align: center;
+    
+    padding-top: 300px;
+}
+.email-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: white;
+}
+.password-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: white;
+}
+.submit-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: white;
+   
+}
+.submit{
+    background-color: white;
+}
