@@ -23,3 +23,8 @@ In this milestone, we have set up the project and implemented the Login Page. Th
 - Connected the Login Page to the backend API for user authentication
 - completed setting for tailwind-css
 
+## Milestone 3: Project Setup for Backend
+-Set up the backend server environment.
+-Created initial API endpoints for core functionalities.
+-Conducted testing and debugging.
+-Documented the process and endpoints.
