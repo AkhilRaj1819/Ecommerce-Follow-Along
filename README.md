@@ -47,3 +47,20 @@ In this milestone, we laid the foundation for the backend of the e-commerce appl
 2. Installed necessary dependencies (express, mongoose, etc.) and created the entry file (index.js).
 3. Configured and tested the database connection using MongoDB.
 4. Added basic error-handling middleware for better debugging and user feedback.
+
+## Milestone 4: Making Your First API and Page
+## Learning Goals 🎯
+- User Model: Blueprint for user data.
+
+- User Controller: Manage user actions.
+
+- Multer Setup: File uploads.
+
+- Update README: Document progress.
+
+## Key Concepts
+- Model: Defines user data.
+
+- Controller: Manages data interactions.
+
+- File Uploads: Using Multer.
