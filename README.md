@@ -48,7 +48,7 @@ In this milestone, we laid the foundation for the backend of the e-commerce appl
 3. Configured and tested the database connection using MongoDB.
 4. Added basic error-handling middleware for better debugging and user feedback.
 
-## Milestone 4: Making Your First API and Page
+## Milestone 4:  Creating User Model and Controller.
 ## Learning Goals 🎯
 - User Model: Blueprint for user data.
 
