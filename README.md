@@ -24,7 +24,26 @@ In this milestone, we have set up the project and implemented the Login Page. Th
 - completed setting for tailwind-css
 
 ## Milestone 3: Project Setup for Backend
--Set up the backend server environment.
--Created initial API endpoints for core functionalities.
--Conducted testing and debugging.
--Documented the process and endpoints.
+
+### Achievements
+In this milestone, we laid the foundation for the backend of the e-commerce application. Here are the key accomplishments:
+- *Backend Folder Structure:* 
+  - Created a structured folder hierarchy to organize routes, controllers, models, and middlewares.
+  - Added placeholder files where necessary to establish a blueprint for future development.
+- *Node.js Server Setup:*
+  - Initialized and configured a Node.js server using Express.
+  - Configured the server to listen on a designated port for API requests.
+- *Database Connection:*
+  - Integrated MongoDB into the project for efficient data storage.
+  - Successfully established the connection between the server and the MongoDB database.
+- *Basic Error Handling:*
+  - Implemented a simple yet effective error-handling mechanism to provide clear error messages and ensure smooth server operation.
+
+### Steps Completed
+1. Set up dedicated folders for backend organization:
+   - controllers/ for handling business logic.
+   - models/ for defining the database schema.
+   - middlewares/ for utilities like authentication (to be expanded in future milestones).
+2. Installed necessary dependencies (express, mongoose, etc.) and created the entry file (index.js).
+3. Configured and tested the database connection using MongoDB.
+4. Added basic error-handling middleware for better debugging and user feedback.
