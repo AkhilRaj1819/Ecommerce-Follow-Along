@@ -64,3 +64,10 @@ In this milestone, we laid the foundation for the backend of the e-commerce appl
 - Controller: Manages data interactions.
 
 - File Uploads: Using Multer.
+
+### Milestone 5: Creating the Signup Page
+- Developed the frontend for the signup page using React.
+- Integrated form handling with state management.
+- Connected the signup form with backend API for user registration.
+- Implemented input validation and error handling.
+- Styled the signup form to match the overall application design.
