@@ -40,6 +40,7 @@ const Signup = () =>{
     }
     return (
         <div className='signup'>
+            <h1>Sign up</h1>
             <form action="" onSubmit={handelSubmit}>
             <label htmlFor=''>Name</label>
             <input type='text' name='name' placeholder='Name...' onChange={handelInput}/>

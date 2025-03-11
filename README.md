@@ -71,3 +71,11 @@ In this milestone, we laid the foundation for the backend of the e-commerce appl
 - Connected the signup form with backend API for user registration.
 - Implemented input validation and error handling.
 - Styled the signup form to match the overall application design.
+### Milestone 6: What was achieved in this milestone
+- **User Authentication System:**
+  - Implemented a user authentication system using JWT (JSON Web Token) for secure login and signup.
+  - Developed API endpoints for user registration, login, and token verification.
+  - Integrated JWT authentication with the frontend to manage user sessions securely.
+
+- **Password Encryption:**
+  - Added password encryption using bcrypt.js to ensure user passwords are stored securely in the database.
