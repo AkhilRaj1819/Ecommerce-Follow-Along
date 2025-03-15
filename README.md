@@ -101,3 +101,6 @@ In Milestone 7, we focused on secure user login. This involved validating user c
    - The entered password is hashed using the same algorithm (e.g., bcrypt).
    - The resulting hash is compared with the stored hashed password.
    - If they match, the user is authenticated; otherwise, an error is returned.
+
+## Milestone 8: **product page in frontend**
+- Added products page ans home page

@@ -1,0 +1,12 @@
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding : 5px;
+}
+.p{
+    display: flex;
+    
+    text-size-adjust: xx-large;
+    
+}
