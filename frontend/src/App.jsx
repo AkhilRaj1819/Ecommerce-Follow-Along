@@ -7,6 +7,7 @@ import {BrowserRouter } from 'react-router-dom'
 import AllRouting from './components/AllRouting';
 import NavBar from './components/NavBar';
 
+
 function App() {
 
   return (

@@ -104,3 +104,15 @@ In Milestone 7, we focused on secure user login. This involved validating user c
 
 ## Milestone 8: **product page in frontend**
 - Added products page ans home page
+
+### Milestone 9: *Product Input Form*
+- Built a form for adding products, including fields for product title and description.
+- Added functionality for uploading multiple images.
+
+---
+
+## Tech Stack
+- *Frontend*: React, Redux, Tailwind CSS
+- *Backend*: Node.js, Express.js
+- *Database*: MongoDB
+- *Authentication*: bcrypt for secure passwords

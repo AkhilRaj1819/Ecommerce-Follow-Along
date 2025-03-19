@@ -11,6 +11,11 @@ const NavBar = () => {
         }}>
             <h1>Home</h1>
         </div>
+        <div >
+            <p onClick={()=>{
+                navigate('./AddProduct')
+            }}>Add Products</p>
+        </div>
         <div>
             <div onClick={()=>{
                 navigate('/Login')
