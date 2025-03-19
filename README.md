@@ -108,7 +108,11 @@ In Milestone 7, we focused on secure user login. This involved validating user c
 ### Milestone 9: *Product Input Form*
 - Built a form for adding products, including fields for product title and description.
 - Added functionality for uploading multiple images.
-
+## Milestone 10: *Created Schema Product Upload*
+- Created **ProductModel** in backend
+- Created the **ProductRouter** page in backend
+- Handeled file uploads by multer inside ,middleware multer. 
+ 
 ---
 
 ## Tech Stack
