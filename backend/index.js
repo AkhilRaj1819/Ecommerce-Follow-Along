@@ -2,6 +2,17 @@ const express = require('express');
 const app = express();
 const connect = require('connect');
 const userRouter = require('./controller/userRouter');
+const mongoose = require('mongoose')
+app.use(express.json())
+const dotenv=require('dotenv')
+dotenv.config();
+const cors = require('cors')
+app.use(cors());
+const MONGO_PASSWORD = process.env.MONGO_PASSWORD;
+console.log(MONGO_PASSWORD)
+const PORT = process.env.PORT || 8000;
+
+const productRouter =require('./controller/productRouter')
 
 
 app.get('/',(req,res)=>{
@@ -14,8 +25,9 @@ app.get('/',(req,res)=>{
 })
 
 app.use('/user',userRouter);
+app.use("/product",productRouter);
 
-app.listen(8000,async()=>{
+app.listen(PORT,async()=>{
     try{
         await connect();
         console.log("serrver connected sucessfully");

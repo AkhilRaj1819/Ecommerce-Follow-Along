@@ -17,7 +17,12 @@ productRouter.post('/AddProducts', (req,res,next)=>{
         if(!title || !description ||!price){
             return res.status(404).send({msg:"Please add all fields"})
         }
-        const images = req.file;
+        const images = req.files;
+        const imageLinkArray = [];
+        images.forEach((ele)=>{
+            console.log(ele);
+        })
+        res.status(200).send({msg:"Product added sucessfully"})
         
 
 
@@ -26,3 +31,5 @@ productRouter.post('/AddProducts', (req,res,next)=>{
     }
 
 })
+ 
+module.exports =productRouter;

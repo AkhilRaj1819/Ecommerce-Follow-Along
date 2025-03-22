@@ -111,12 +111,14 @@ In Milestone 7, we focused on secure user login. This involved validating user c
 ## Milestone 10: *Created Schema Product Upload*
 - Created **ProductModel** in backend
 - Created the **ProductRouter** page in backend
-- Handeled file uploads by multer inside ,middleware multer. 
- 
----
-
-## Tech Stack
-- *Frontend*: React, Redux, Tailwind CSS
-- *Backend*: Node.js, Express.js
-- *Database*: MongoDB
-- *Authentication*: bcrypt for secure passwords
+- Handeled file uploads by multer inside ,middleware multer.
+# Milestone 11: Dynamic Home Page
+- Built an API endpoint to fetch product data from MongoDB.
+- Dynamically rendered product data on the frontend using the product card component.
+# Milestone 12: My Products Page
+- Added a backend API endpoint to fetch products filtered by user email from MongoDB.
+- Integrated the API in the frontend to dynamically display data using the existing **Product Card** component.
+### Steps Completed
+1. **Backend**: Created an API endpoint to fetch filtered product data.
+2. **Frontend**: Implemented functionality to retrieve and render product data dynamically.
+3. **Finalized**: Updated the README and tested the integration.
