@@ -136,3 +136,7 @@ In this milestone, we have implemented the *edit functionality* for uploaded pro
    - Passed the selected product’s data to the form.
    - Autofilled the form with the product’s existing details for easy editing.
 3. Provided users the option to modify details and save changes.
+
+## Milestone 14: Add Delete Functionality to Product Data 🌟
+Overview
+In this milestone, we implemented a delete functionality for product data. This includes creating a backend endpoint to delete products using their IDs and adding a delete button to the product card in the frontend.
