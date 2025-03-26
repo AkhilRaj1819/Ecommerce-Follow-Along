@@ -118,7 +118,21 @@ In Milestone 7, we focused on secure user login. This involved validating user c
 # Milestone 12: My Products Page
 - Added a backend API endpoint to fetch products filtered by user email from MongoDB.
 - Integrated the API in the frontend to dynamically display data using the existing **Product Card** component.
-### Steps Completed
-1. **Backend**: Created an API endpoint to fetch filtered product data.
-2. **Frontend**: Implemented functionality to retrieve and render product data dynamically.
-3. **Finalized**: Updated the README and tested the integration.
+# Milestone 13: Edit Functionality for Uploaded Products 🌟
+
+## Overview
+In this milestone, we have implemented the *edit functionality* for uploaded products. This includes adding an edit button to product cards, autofilling the form with existing data, and allowing users to update product details. The backend logic has been designed to ensure seamless data updates in the MongoDB database.
+
+## Steps Implemented 📝
+
+### Backend:
+1. Created an API endpoint in the backend to handle the update operation for product details.
+2. Validated incoming data to ensure integrity before updating the MongoDB database.
+3. Updated the database with the new product details.
+
+### Frontend:
+1. Added an *Edit* button to product cards.
+2. Upon clicking the Edit button:
+   - Passed the selected product’s data to the form.
+   - Autofilled the form with the product’s existing details for easy editing.
+3. Provided users the option to modify details and save changes.
