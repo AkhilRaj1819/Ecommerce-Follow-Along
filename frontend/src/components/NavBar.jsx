@@ -1,32 +1,39 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import styles from './NavBar.module.css'
-
-const NavBar = () => {
+import styles from "./navbar.module.css";
+const Navbar = () => {
     const navigate = useNavigate();
   return (
-    <div className={styles.navbar}>
-        <div onClick={()=>{
-            navigate('/')
-        }}>
+    <div
+    className={styles.navbar}
+    >
+        <div
+        onClick={()=>{
+            navigate("/");
+        }}
+        >
             <h1>Home</h1>
         </div>
-        <div >
+        <div>
             <p onClick={()=>{
-                navigate('./AddProduct')
+                navigate("/addproducts");
             }}>Add Products</p>
         </div>
         <div>
-            <div onClick={()=>{
-                navigate('/Login')
-            }}>Login</div>
-            <div onClick={()=>{
-                navigate('/Signup')
-            }}>Signup</div>
+        <div
+        onClick={()=>{
+            navigate("/login");
+        }}
+        >Login</div>
+        <div
+        onClick={()=>{
+            navigate("/signup");
+        }}
+        >Signup</div>
         </div>
-      
+        
     </div>
   )
 }
 
-export default NavBar
+export default Navbar
