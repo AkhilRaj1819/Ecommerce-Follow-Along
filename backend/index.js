@@ -4,6 +4,8 @@ const app = express();
 
 app.use(express.json());
 
+const path = require('path')
+
 const mongoose = require("mongoose");
 
 const dotenv = require("dotenv");
@@ -42,6 +44,9 @@ app.get("/",(req,res)=>{
 app.use("/user",useRouter);
 
 app.use('/allproducts',allProductRouter)
+
+app.use("/upload",express.static(path.join(__dirname,"uploads")));
+
 
 app.use("/product",async (req, res, next) => {
     try {
