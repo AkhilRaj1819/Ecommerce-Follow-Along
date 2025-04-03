@@ -4,7 +4,7 @@ import Products from './components/Products';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import AddProduct from './components/AddProduct';
-import MyProducts from './components/myProducts';
+import MyProducts from './components/MyProducts';
 const AllRouting = () => {
   return (
     <Routes>

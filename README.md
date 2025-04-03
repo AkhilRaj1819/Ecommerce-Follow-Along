@@ -89,25 +89,9 @@ Ecommerce-Follow-Along is a full-fledged **E-Commerce Application** built using 
 ✅ Created **Product Delete Endpoint** for Updating products.
 ✅ Created form for Deleting product in frontend.
 
-#### Milestone 15: Navbar Component Creation 🚀
+### **🛠️ Milestone 15: Created NavBar** 
+✅ Created **Navigation Bar** for Navigating between pages.
 
-## Overview 🌟
-Welcome to *Milestone 15, Kalvians! In this milestone, we will focus on creating a reusable and responsive **Navbar Component* for our application. This Navbar will be integrated across multiple pages to ensure seamless navigation.
-
-### Learning Goals 🎯
-By the end of this milestone, you will:
-- Understand how to create a *Nav component* in React.
-- Learn how to reuse the same component across multiple pages.
-- Master the techniques for making a responsive Navbar that adapts to various screen sizes.
-
-## Key Features ✨
-- *Reusable Component*: A single Navbar used across all pages to maintain consistency.
-- *Smooth Navigation*: Effortless movement between pages.
-- *Responsive Design*: Adaptive layout for enhanced usability on all devices.
-
-## Milestone 16 :
-
-- **Product Info Page**: Added a page displaying product details dynamically.  
-- **Quantity Selector**: Included an input for selecting quantity.  
-- **Add to Cart**: Implemented functionality to add selected quantity to the cart.  
-- **Submission**: Code pushed to a public GitHub repository with an updated README.  
+### **🛠️ Milestone 16: Created ProductDetails Page** 
+✅ Created **Product Details** for showing full product details in details page.
+✅ Added Add to cart button with quantity selection.

@@ -5,7 +5,7 @@ import styles from "./products.module.css";
 const Products = () => {
     const [products,setProducts] = useState([]);
     function getData(){
-        axios.get("https://localhost:8080/allproducts")
+        axios.get("http://localhost:8080/allproducts")
         .then((data)=>{
             console.log(data);
             setProducts(data.data.products);
