@@ -110,4 +110,8 @@ Ecommerce-Follow-Along is a full-fledged **E-Commerce Application** built using 
 
 ### **Milestone 20: Backend endpoint for userdetails**
 ✅created endpoint for userdetails in backend.
-✅created user.jsx for userdeatils in frontend. 
+✅created user.jsx for userdeatils in frontend.
+
+## **Milestone 22: Created backend for Address and attached to frontend**
+✅created backend endpoint for address
+✅added backend endpoint to frontend
