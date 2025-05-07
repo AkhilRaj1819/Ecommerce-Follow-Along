@@ -96,44 +96,62 @@ Ecommerce-Follow-Along is a full-fledged **E-Commerce Application** built using 
 ✅ Created **Product Details** for showing full product details in details page.
 ✅ Added Add to cart button with quantity selection.
 
-### **Milestone 17: Created ProducedDetail page**
-✅create endpoints in backend **CRUD** for handling cart
-✅Handled quantity in cart
 
+### **🛠️ Milestone 17:  CRUD for cart** 
+✅ Create endpoints in backend ***CRUD*** for handling cart.
+✅ Handaled quantity for product in cart.
 
-### **Milestone 18: Frontend for cart page**
-✅created cart page in frontend
-✅handled cart page for frontend
+### **🛠️ Milestone 18:  Frontend for cart page** 
+✅ Created cart page in frontend.
+✅ Handled cart operations from frontend. 
 
-### **Milestone 19: Backend endpoint for cart item quantity**
-✅created put request for updating quantity for cart item.
+### **🛠️ Milestone 19: Backend endpoint for cart item quantity**
+✅ created put request for updating quantity for cart item.
 
-### **Milestone 20: Backend endpoint for userdetails**
-✅created endpoint for userdetails in backend.
-✅created user.jsx for userdeatils in frontend.
+### **🛠️ Milestone 20: Backend endpoint for UserDetails**
+✅ created endpoint for userDetails in backend
+✅ created User.jsx for userDetails in frontend.
 
-## **Milestone 22: Created backend for Address and attached to frontend**
-✅created backend endpoint for address
-✅added backend endpoint to frontend
+### **🛠️ Milestone 21: Created frontend for Address**
+✅ created route for Add Address Page in Frontend.
+✅ create form for adding address.
+✅ stored address using useState Hook.
 
-### 🛠 Milestone 23: worked on address in frontend and backend 
-✅ Created placeorder button in cart page and added navigation to select address.
-✅ Create select address page and provided option to select one address.
-✅ Created backend endpoint to sent all address to user.
----
-### **🛠 Milestone 24 worked on address in frontend and backend
+### **🛠️ Milestone 22: Created Backend for Address and attached with fronted**
+✅ created backend endpoint for handeling address.
+✅ added backend endpoint with frontend.
+
+### **🛠️ Milestone 23 worked on address in frontend and backend
+✅ created placeorder button in cart page and added navigation to select address
+✅ created select address page and provided option to select one address.
+✅created backend endpoint to sent all address to user.
+
+### **🛠️ Milestone 24 worked on address in frontend and backend
+
 ✅ Displayed all of products in cart.
 ✅ Displayed All address in address selection page.
 ✅ Displayed total price in cart.
 ✅ Added place order button at the bottom.
-### **Milestone 25**
-✅ Created endpoint for order.
-✅ Implemented mail service for nodemailer.
-✅ Handled address for delivery.
-### **Milestone 26**
-✅implemented mail with nodemailer.
-✅sending order details to user via mail.
 
-### ***Milestone 27*
-✅created a get request for order
+### **🛠️ Milestone 25 worked on order backend and email service
 
+✅ created endpoint for order.
+✅ implemented mail service from nodemailer.
+✅ handled address for the delivery.
+
+### **🛠️ Milestone 26 worked on order backend and email service
+
+✅ Implemented mail with nodemailer.
+✅ Sending order details to user via mail.
+
+### **🛠️ Milestone 27 worked on frontend for my order page
+
+✅ created get request to get request my orders
+
+### **🛠️ Milestone 28 worked on frontend for my order page
+
+✅ add cancel button in my-orders and create an backend endpoint for cancel order
+
+### **🛠️ Milestone 29 worked on frontend for my order page
+
+✅ add online payment gateway to our application using Paypal api.
