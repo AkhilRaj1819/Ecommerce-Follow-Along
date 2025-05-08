@@ -148,10 +148,14 @@ Ecommerce-Follow-Along is a full-fledged **E-Commerce Application** built using 
 
 ✅ created get request to get request my orders
 
-### **🛠️ Milestone 28 worked on frontend for my order page
+### **🛠️ Milestone 28 cancel order payment
 
 ✅ added cancel button in my-orders and create an backend endpoint for cancel order
 
-### **🛠️ Milestone 29 worked on frontend for my order page
+### **🛠️ Milestone 29 payment
 
 ✅ adde online payment gateway to our application with fake payment gateway.
+
+### **🛠️ Milestone 30 payment
+
+✅ worked on payment page
