@@ -1,8 +1,10 @@
 const express = require("express");
+const path = require("path");
 
 const addressRouter = express.Router();
 
-const addressModel = require("../models/addressSchema");
+// Use absolute paths to ensure correct resolution on different environments
+const addressModel = require(path.join(__dirname, "../models/addressSchema"));
 
 // Fetch all addresses for the logged-in user
 addressRouter.get("/", async (req, res) => {

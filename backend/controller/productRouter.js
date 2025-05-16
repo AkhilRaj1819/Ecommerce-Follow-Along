@@ -1,7 +1,10 @@
 const express = require("express");
+const path = require("path");
 const productRouter = express.Router();
-const productModel = require("../models/productModel");
-const { productImages } = require("../middleware/multer");
+
+// Use absolute paths to ensure correct resolution on different environments
+const productModel = require(path.join(__dirname, "../models/productModel"));
+const { productImages } = require(path.join(__dirname, "../middleware/multer"));
 
 const uploadImages = (req, res, next) => {
     productImages.array("images", 6)(req, res, (err) => {
@@ -36,8 +39,12 @@ productRouter.post("/addproduct", uploadImages, async (req, res) => {
             return res.status(400).json({ msg: "At least one image is required" });
         }
 
-        // Construct image URLs
-        const imageUrls = req.files.map(file => `http://localhost:8080/uploads/productImages/${file.filename}`);
+        // Construct image URLs using dynamic host
+        const host = process.env.NODE_ENV === 'production'
+            ? (process.env.RENDER_EXTERNAL_URL || `https://${req.headers.host}`)
+            : `http://localhost:${process.env.PORT || 8080}`;
+
+        const imageUrls = req.files.map(file => `${host}/uploads/productImages/${file.filename}`);
 
         // Save product only if validation passes
         const newProduct = new productModel({
@@ -83,8 +90,12 @@ productRouter.put("/update/:id", uploadImages, async (req, res) => {
             return res.status(400).json({ msg: "At least one image is required" });
         }
 
-        // Construct image URLs
-        const imageUrls = req.files.map(file => `http://localhost:8080/uploads/productImages/${file.filename}`);
+        // Construct image URLs using dynamic host
+        const host = process.env.NODE_ENV === 'production'
+            ? (process.env.RENDER_EXTERNAL_URL || `https://${req.headers.host}`)
+            : `http://localhost:${process.env.PORT || 8080}`;
+
+        const imageUrls = req.files.map(file => `${host}/uploads/productImages/${file.filename}`);
 
         const updatedProduct = await productModel.findByIdAndUpdate(
             { _id: id },

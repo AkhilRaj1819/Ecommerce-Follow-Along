@@ -1,19 +1,17 @@
 const express = require("express");
+const path = require("path");
 
 const orderRouter = express.Router();
 
-const orderModel = require("../models/orderSchema");
+// Use absolute paths to ensure correct resolution on different environments
+const orderModel = require(path.join(__dirname, "../models/orderSchema"));
+const cartProducts = require(path.join(__dirname, "../models/cartModel"));
+const productModel = require(path.join(__dirname, "../models/productModel"));
+const userModel = require(path.join(__dirname, "../models/userModel"));
+const addressModel = require(path.join(__dirname, "../models/addressSchema"));
+const cartModel = require(path.join(__dirname, "../models/cartModel"));
 
-const cartProducts = require("../models/cartModel");
-
-const productModel = require("../models/productModel");
-
-const userModel = require("../models/userModel");
-
-const addressModel = require("../models/addressSchema");
-const cartModel = require("../models/cartModel");
-
-const mailer = require("../nodemailer");
+const mailer = require(path.join(__dirname, "../nodemailer"));
 
 orderRouter.post("/", async (req, res) => {
   try {

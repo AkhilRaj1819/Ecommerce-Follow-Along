@@ -1,7 +1,9 @@
 const express = require("express");
+const path = require("path");
 
-const productModel = require("../models/productModel");
-const cartModel = require("../models/cartModel");
+// Use absolute paths to ensure correct resolution on different environments
+const productModel = require(path.join(__dirname, "../models/productModel"));
+const cartModel = require(path.join(__dirname, "../models/cartModel"));
 
 const cartRouter = express.Router();
 

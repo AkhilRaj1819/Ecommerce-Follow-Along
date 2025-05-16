@@ -1,7 +1,10 @@
 const express = require("express");
-const userModel = require("../models/userModel");
+const path = require("path");
+
+// Use absolute paths to ensure correct resolution on different environments
+const userModel = require(path.join(__dirname, "../models/userModel"));
 const bcrypt = require("bcryptjs");
-const { userImage } = require("../middleware/multer");
+const { userImage } = require(path.join(__dirname, "../middleware/multer"));
 const jwt = require('jsonwebtoken');
 
 const userRouter = express.Router();
@@ -31,17 +34,21 @@ userRouter.post("/signup", async (req, res) => {
             const saltRounds = 10;
             const hashedPassword = await bcrypt.hash(password, saltRounds);
 
-            // Handle image upload (if provided)
-            const imageUrl = req.file 
-                ? `http://localhost:8080/uploads/userImages/${req.file.filename}`
+            // Handle image upload (if provided) with dynamic host
+            const host = process.env.NODE_ENV === 'production'
+                ? (process.env.RENDER_EXTERNAL_URL || `https://${req.headers.host}`)
+                : `http://localhost:${process.env.PORT || 8080}`;
+
+            const imageUrl = req.file
+                ? `${host}/uploads/userImages/${req.file.filename}`
                 : null;
 
             // Create user
-            const newUser = await userModel.create({ 
-                name, 
-                email, 
-                password: hashedPassword, 
-                image: imageUrl 
+            const newUser = await userModel.create({
+                name,
+                email,
+                password: hashedPassword,
+                image: imageUrl
             });
             const token = jwt.sign({ name:newUser.name,email:newUser.email,id:newUser.id }, process.env.JWT_PASSWORD);
             return res.status(201).json({ message: "User registered successfully", token:token,name,id:newUser.id });
@@ -57,7 +64,7 @@ userRouter.post("/login", async (req, res) => {
     try {
         console.log("email,password")
         const { email, password } = req.body;
-        
+
         if (!email || !password) {
             return res.status(400).json({ message: "All details are required" });
         }
@@ -68,7 +75,7 @@ userRouter.post("/login", async (req, res) => {
             return res.status(401).json({ message: "Invalid email or password" });
         }
 
-        
+
         const matchedPass = bcrypt.compareSync(password, user.password);
 
         if (matchedPass) {
@@ -85,7 +92,7 @@ userRouter.post("/login", async (req, res) => {
             return res.status(401).json({ message: "Invalid email or password" });
         }
 
-        
+
     } catch (error) {
         console.error("Login Error:", error);
         return res.status(500).json({ error: "Internal Server Error" });
