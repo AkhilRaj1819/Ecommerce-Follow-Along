@@ -18,9 +18,20 @@ const userModel = require("./models/userModel");
 
 const cors = require("cors");
 
+const cookieParsher = require("cookie-parser");
+
+app.use(cookieParsher());
+
 const cartRouter = require("./controller/cartProducts");
 
-app.use(cors());
+
+
+app.use(cors({
+    origin: ["https://ecommerce-follow-along-alpha.vercel.app",
+        "http://localhost:5174"
+     ],
+    credentials: true,
+}));
 
 const MONGO_PASSWORD = process.env.MONGO_PASSWORD;
 
@@ -42,6 +53,7 @@ const mailer = require("./nodemailer");
 const orderRouter = require("./controller/orderRouter");
 
 
+
 app.get("/",(req,res)=>{
     try {
         res.send({message:"This is E-commerce Follow Along Backend"});
@@ -54,7 +66,7 @@ app.use("/user",useRouter);
 
 app.use("/product",async (req, res, next) => {
     try {
-        const token = req.header("Authorization");
+        const token = req.cookies.token;
         console.log(token)
         if (!token) {
             return res.status(401).json({ message: "Please login" });
@@ -79,7 +91,7 @@ app.use("/cart",
     async (req, res, next) => {
         console.log("cart")
         try {
-            const token = req.header("Authorization");
+            const token = req.cookies.token;
             console.log(token)
             if (!token) {
                 return res.status(401).json({ message: "Please login" });
@@ -105,7 +117,7 @@ app.use("/cart",
         async (req, res, next) => {
             console.log("cart")
             try {
-                const token = req.header("Authorization");
+                const token = req.cookies.token;
                 console.log(token)
                 if (!token) {
                     return res.status(401).json({ message: "Please login" });
@@ -132,7 +144,7 @@ app.use("/cart",
     app.use("/order",async (req, res, next) => {
         console.log("cart")
         try {
-            const token = req.header("Authorization");
+            const token = req.cookies.token;
             console.log(token)
             if (!token) {
                 return res.status(401).json({ message: "Please login" });
@@ -159,7 +171,7 @@ app.use("/uploads",express.static(path.join(__dirname,"uploads")));
 
 app.listen(8080,async ()=>{
     try {
-       await mongoose.connect(`mongodb+srv://akhil031215n:NnKskgQgV0GLgVYr@cluster0.3belmjk.mongodb.net/`);
+       await mongoose.connect(`mongodb+srv://akhil031215n:${MONGO_PASSWORD}@cluster0.3belmjk.mongodb.net/`);
        console.log("Connected sucessfully");
     } catch (error) {
         console.log("Something went wrong not able to connect to server",error);
