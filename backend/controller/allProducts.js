@@ -1,8 +1,10 @@
 const express = require("express");
+const path = require("path");
 
 const allProductRouter = express.Router();
 
-const productModel = require("../models/productModel");
+// Use absolute paths to ensure correct resolution on different environments
+const productModel = require(path.join(__dirname, "../models/productModel"));
 
 allProductRouter.get("/",async(req,res)=>{
     try {
